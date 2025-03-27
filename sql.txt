@@ -1,0 +1,8 @@
+CREATE TABLE `quiz_state` (
+user_id Uint64, 
+question_index Uint64,
+count_of_right Uint64,
+PRIMARY KEY (`user_id`)
+);
+
+COMMIT;
