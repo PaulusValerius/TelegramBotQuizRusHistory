@@ -10,7 +10,7 @@ def get_quiz_data(data):
 class Asyncrange:
     class __asyncrange:
         def __init__(self, *args):
-            self.__iter_range = iter(range(1,*args))
+            self.__iter_range = iter(range(*args))
         async def __anext__(self):
             try:
                 return next(self.__iter_range)           
